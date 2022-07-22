@@ -1,12 +1,13 @@
 {% extends 'pages/_base.html' %}
 {% block head_title %} Hello, world!{% endblock head_title %}
 {% block content %}
-    <div class='row'>
+    <div id='tweetme-2'></div>
+    <div class='row d-none'>
         <div class='col text-center'>
             <h1>Welcome to Tweetme 2</h1>
         </div>
     </div>
-    <div class='row mb-3'>
+    <div class='row mb-3 d-none'>
         <div class='col-10 col-md-4 mx-auto'>
             <form action="/api/tweets/create/" method='post'
                 class='form' id='tweet-create-form'>
@@ -21,7 +22,7 @@
         </form>
         </div>
     </div>
-    <div class='row' id='tweets'>
+    <div class='row d-none' id='tweets'>
         Loading...
     </div>
 
